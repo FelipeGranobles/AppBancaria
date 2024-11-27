@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        String UserName = "Juan Carlo";
+        String AccountType = "Corriente";
+        double bankBalance = 1599.99;
+
+
     }
 }
