@@ -10,15 +10,21 @@ public class Main {
         int exit = 0;
         double transactionValue;
 
+        String menu = """
+                Escriba el número de la opción deseada
+                1 - Consultar saldo
+                2 - Retirar
+                3 - Depositar
+                9 - Salir
+                """;
+
+        System.out.println("********************************");
+        System.out.println("Bienvenido " + UserName);
+        System.out.println("Tipo de Cuenta = " + AccountType);
+
         while(exit!=9){
-            System.out.println("********************************");
-            System.out.println("Bienvenido " + UserName);
-            System.out.println("Tipo de Cuenta = " + AccountType);
-            System.out.println("Escriba el número de la opción deseada");
-            System.out.println("1 - Consultar saldo");
-            System.out.println("2 - Retirar");
-            System.out.println("3 - Depositar");
-            System.out.println("9 - Salir");
+            System.out.println(menu);
+
             exit = input.nextInt();
             switch (exit){
                 case 1:
